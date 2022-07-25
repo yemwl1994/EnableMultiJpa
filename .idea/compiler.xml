@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="gebng-commons-core" />
+        <module name="gebng-payerpayee-sg" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gebng-common-sg" target="8" />
+      <module name="gebng-payerpayee-core" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gebng-aggregator" options="-parameters" />
+      <module name="gebng-common-sg" options="-parameters" />
+      <module name="gebng-commons" options="-parameters" />
+      <module name="gebng-commons-core" options="-parameters" />
+      <module name="gebng-payerpayee-core" options="-parameters" />
+      <module name="gebng-payerpayee-sg" options="-parameters" />
+    </option>
+  </component>
+</project>

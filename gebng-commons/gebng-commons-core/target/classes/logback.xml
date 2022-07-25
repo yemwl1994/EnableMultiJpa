@@ -1,0 +1,18 @@
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss} [%-10level] %logger{36} %msg%n</pattern>
+        </encoder>
+
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+    <logger name="com" level="INFO">
+        <appender-ref ref="STDOUT" />
+    </logger>
+<!--    <logger name="com.andy" level="INFO"/>-->
+
+</configuration>
